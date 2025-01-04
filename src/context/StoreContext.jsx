@@ -5,9 +5,16 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
+<<<<<<< HEAD
     const url = "http://localhost:4000"; // Fixed URL
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([]);
+=======
+    const url = "https://platter-pal-nlbt.vercel.app"
+    const [token, setToken] = useState("")
+    const [food_list, setFoodList] = useState([])
+
+>>>>>>> 0cd878344d90c5933f9658b6fc3b7986e447d732
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
